@@ -8,6 +8,10 @@ Link soal: https://www.hackerrank.com/challenges/the-report/problem?isFullScreen
 
 Soal 2 : Weather Observation Station 18
 Link soal: https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true
+<img width="790" height="442" alt="image" src="https://github.com/user-attachments/assets/656f1961-4b76-4d67-8101-eb22428400ea" />
+<img width="783" height="478" alt="image" src="https://github.com/user-attachments/assets/9ab5749b-d228-4dc0-aa32-49f12ba64185" />
+
+
 
 Soal 3 : Top Competitors
 Link soal: https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true
