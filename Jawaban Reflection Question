@@ -1,2 +1,39 @@
 Jawaban Reflection Question
 https://docs.google.com/document/d/14NFpFsI2oeDOLS-OwjspdQgu_fKIgtOsSVYuaoR-W0k/edit?tab=t.0
+
+
+
+
+
+Reflection Questions
+Ketika membangun solusi untuk setiap studi kasus, bagaimana Anda menentukan struktur query yang paling efektif (misalnya memutuskan kapan menggunakan CTE, kapan cukup dengan subquery, atau kapan window function lebih tepat dibanding agregasi biasa)? Jelaskan bagaimana pertimbangan tersebut membantu Anda menghasilkan query yang lebih terstruktur, mudah diuji, dan efisien.
+Setelah mengerjakan seluruh soal, teknik SQL lanjutan apa yang menurut Anda paling memberi dampak pada cara Anda menganalisis dan memproses data (misalnya range join, window function, nested aggregation, atau CASE WHEN)? Jelaskan bagaimana teknik tersebut dapat membantu Anda menyelesaikan masalah data yang lebih kompleks di pekerjaan nyata.
+
+
+
+
+Jawaban
+
+Pertimbangan pemilihan struktur query yang paling efektif
+
+Sub Query  
+Digunakan dengan operator seperti IN, NOT IN, EXISTS, atau NOT EXISTS untuk membatasi baris berdasarkan hasil kueri lain.
+Untuk mengambil nilai tunggal (agregat) yang relevan untuk setiap baris di kueri luar.
+Sebagai sumber data sementara (sering disebut derived table) ketika logikanya cukup sederhana dan tidak perlu dipecah menjadi langkah-langkah yang jelas.
+Pilihan terbaik saat bekerja dengan versi database lama yang tidak mendukung CTE atau Window Function.
+
+CTE 
+Ketika solusi memerlukan beberapa langkah komputasi berurutan. CTE membagi logika kompleks menjadi unit-unit yang mudah dibaca dan diuji.
+Wajib digunakan untuk memproses data hierarkis (misalnya, mencari semua bawahan dari seorang manajer), di mana hasil kueri diulang terus menerus.
+Menggantikan subkueri bersarang yang dalam atau subkueri yang perlu dirujuk berkali-kali, meningkatkan kejelasan kode.
+
+Window Function
+
+Memberikan peringkat pada baris dalam suatu kelompok (misalnya, 3 karyawan teratas per departemen).
+Menghitung nilai agregat (total, rata-rata, maksimum) dari suatu kelompok (didefinisikan oleh PARTITION BY) di samping detail setiap baris.
+Digunakan untuk membandingkan nilai setiap baris dengan rata-rata, total, atau nilai minimum/maksimum dari kelompoknya, semua dalam satu kueri tanpa self-join yang rumit.
+Menghitung akumulasi nilai seiring progres data (menggunakan klausa ORDER BY dalam OVER()).
+
+
+Menurut saya teknik SQL lanjutan yang paling memberi dampak signifikan pada cara saya menganalisis dan memproses data  yang sudah saya lakukan adalah CTE. 
+Karena CTE memberikan dampak besar, secara fundamental mengubah cara kita menyusun dan memproses logika SQL yang kompleks, menjadikannya lebih terstruktur, mudah dipahami dan simpel.
