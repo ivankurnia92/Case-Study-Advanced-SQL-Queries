@@ -26,5 +26,15 @@ Link soal: https://www.hackerrank.com/challenges/full-score/problem?isFullScreen
 Soal 4 : Ollivander's Inventory
 Link soal: https://www.hackerrank.com/challenges/harry-potter-and-wands/problem?isFullScreen=true
 
+<img width="784" height="564" alt="image" src="https://github.com/user-attachments/assets/3296525b-7dbc-4f90-b789-2a78f77b12eb" />
+<img width="785" height="602" alt="image" src="https://github.com/user-attachments/assets/d67a81ba-e671-4b94-bb97-2dd8f9cc80e2" />
+
+
+
 Soal 5 : Contest Leaderboard
 Link soal: https://www.hackerrank.com/challenges/contest-leaderboard/problem?isFullScreen=true
+
+<img width="791" height="490" alt="image" src="https://github.com/user-attachments/assets/511ee510-446e-4dea-80f5-12f23d2a4e16" />
+<img width="785" height="612" alt="image" src="https://github.com/user-attachments/assets/f1f99c48-b05f-415f-af87-ce6d9d545d4f" />
+
+
